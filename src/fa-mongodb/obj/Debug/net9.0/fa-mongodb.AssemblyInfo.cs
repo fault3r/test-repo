@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("fa-mongodb")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dbf278be1ed20d6a89f4addc7b1138408604f185")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c412254a61bf6c308ce81360afbf9fddff82e18a")]
 [assembly: System.Reflection.AssemblyProductAttribute("fa-mongodb")]
 [assembly: System.Reflection.AssemblyTitleAttribute("fa-mongodb")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/fa-mongodb.props" />
+</Project>
