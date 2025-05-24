@@ -1,0 +1,6 @@
+@fa_mongodb_HostAddress = http://localhost:5265
+
+GET {{fa_mongodb_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/hamed-damavandi/Projects/test-repo/src/fa-mongodb/fa-mongodb.csproj": {}
+    "/home/hamed-damavandi/Documents/test-repo/src/fa-mongodb/fa-mongodb.csproj": {}
   },
   "projects": {
-    "/home/hamed-damavandi/Projects/test-repo/src/fa-mongodb/fa-mongodb.csproj": {
+    "/home/hamed-damavandi/Documents/test-repo/src/fa-mongodb/fa-mongodb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/hamed-damavandi/Projects/test-repo/src/fa-mongodb/fa-mongodb.csproj",
+        "projectUniqueName": "/home/hamed-damavandi/Documents/test-repo/src/fa-mongodb/fa-mongodb.csproj",
         "projectName": "fa-mongodb",
-        "projectPath": "/home/hamed-damavandi/Projects/test-repo/src/fa-mongodb/fa-mongodb.csproj",
+        "projectPath": "/home/hamed-damavandi/Documents/test-repo/src/fa-mongodb/fa-mongodb.csproj",
         "packagesPath": "/home/hamed-damavandi/.nuget/packages/",
-        "outputPath": "/home/hamed-damavandi/Projects/test-repo/src/fa-mongodb/obj/",
+        "outputPath": "/home/hamed-damavandi/Documents/test-repo/src/fa-mongodb/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/hamed-damavandi/.nuget/NuGet/NuGet.Config"
@@ -44,6 +44,16 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[9.0.5, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[3.4.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -56,6 +66,9 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
