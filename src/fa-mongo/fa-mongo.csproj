@@ -13,4 +13,11 @@
     <PackageReference Include="MongoDB.Driver" Version="3.4.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Controllers/" />
+    <Folder Include="Data/" />
+    <Folder Include="Entities/" />
+    <Folder Include="Services/" />
+  </ItemGroup>
+
 </Project>
