@@ -33,7 +33,7 @@ namespace BookApi_Infrastructure.Repositories
 
         public async Task<Book> GetBookAsync(string id)
         {
-            var filter = Builders<BookDocument>.Filter.Eq(p => p.Id.ToString(), id);
+            var filter = Builders<BookDocument>.Filter.Eq(p => p.Id, new ObjectId(id));
             var mBook = await _mongoDbContext.Books.Find(filter).FirstOrDefaultAsync();
             return new Book
             {
