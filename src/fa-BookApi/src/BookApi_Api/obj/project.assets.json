@@ -368,10 +368,21 @@
           "lib/net7.0/ZstdSharp.dll": {}
         }
       },
+      "BookApi_Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/BookApi_Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BookApi_Domain.dll": {}
+        }
+      },
       "BookApi_Infrastructure/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "BookApi_Domain": "1.0.0",
           "Microsoft.Extensions.Options": "9.0.5",
           "MongoDB.Driver": "3.4.0"
         },
@@ -1229,6 +1240,11 @@
         "zstdsharp.port.0.7.3.nupkg.sha512",
         "zstdsharp.port.nuspec"
       ]
+    },
+    "BookApi_Domain/1.0.0": {
+      "type": "project",
+      "path": "../BookApi_Domain/BookApi_Domain.csproj",
+      "msbuildProject": "../BookApi_Domain/BookApi_Domain.csproj"
     },
     "BookApi_Infrastructure/1.0.0": {
       "type": "project",

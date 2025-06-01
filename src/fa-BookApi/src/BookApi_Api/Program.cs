@@ -1,10 +1,12 @@
 using BookApi_Infrastructure.Configurations;
+using BookApi_Infrastructure.Data.Contexts;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 
 builder.Services.Configure<MongodbSettings>(builder.Configuration.GetSection("MongoDb"));
+builder.Services.AddScoped<MongoDbContext>();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
