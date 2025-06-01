@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using BookApi_Domain.Entities;
+using BookApi_Domain.Interfaces;
 using BookApi_Infrastructure.Data.Contexts;
 using BookApi_Infrastructure.Data.Contexts.Documents;
 using MongoDB.Bson;
@@ -8,7 +9,7 @@ using MongoDB.Driver;
 
 namespace BookApi_Infrastructure.Repositories
 {
-    public class BookRepository
+    public class BookRepository : IBookRepository
     {
         private readonly MongoDbContext _mongoDbContext;
 

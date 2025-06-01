@@ -1,10 +1,10 @@
 using System;
 
-namespace BookApi_Domain.Entities
+namespace BookApi_Application.DTOs
 {
-    public class Book
+    public class BookDto
     {
-        public string? Id { get; set; }
+        public required string Id { get; set; }
 
         public required string Title { get; set; }
 
