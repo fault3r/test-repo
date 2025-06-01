@@ -22,6 +22,7 @@ builder.Services.AddScoped<IBookService, BookService>();
 builder.Services.AddMediatR(typeof(GetBooksQueryHandler).Assembly);
 builder.Services.AddMediatR(typeof(GetBookQueryHandler).Assembly);
 builder.Services.AddMediatR(typeof(AddBookCommandHandler).Assembly);
+builder.Services.AddMediatR(typeof(DelBookCommandHandler).Assembly);
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
