@@ -1,3 +1,4 @@
+using BookApi_Application.Handlers.Commands;
 using BookApi_Application.Handlers.Queries;
 using BookApi_Application.Interfaces;
 using BookApi_Application.Services;
@@ -19,6 +20,8 @@ builder.Services.AddScoped<IBookRepository, BookRepository>();
 builder.Services.AddScoped<IBookService, BookService>();
 
 builder.Services.AddMediatR(typeof(GetBooksQueryHandler).Assembly);
+builder.Services.AddMediatR(typeof(GetBookQueryHandler).Assembly);
+builder.Services.AddMediatR(typeof(AddBookCommandHandler).Assembly);
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
