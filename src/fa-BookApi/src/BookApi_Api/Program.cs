@@ -7,10 +7,23 @@ using BookApi_Infrastructure.Configurations;
 using BookApi_Infrastructure.Data.Contexts;
 using BookApi_Infrastructure.Repositories;
 using MediatR;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Versioning;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
+
+builder.Services.AddApiVersioning(options =>
+{
+    options.DefaultApiVersion = new ApiVersion(1, 0);
+    options.AssumeDefaultVersionWhenUnspecified = true;
+    options.ReportApiVersions = true;
+    options.ApiVersionReader = ApiVersionReader.Combine(
+        new HeaderApiVersionReader("api-version"),
+        new QueryStringApiVersionReader("v"),
+        new UrlSegmentApiVersionReader());
+});
 
 builder.Services.Configure<MongodbSettings>(builder.Configuration.GetSection("MongoDb"));
 builder.Services.AddScoped<MongoDbContext>();

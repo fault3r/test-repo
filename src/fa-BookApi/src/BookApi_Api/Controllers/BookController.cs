@@ -9,6 +9,7 @@ namespace BookApi_Api.Controllers
 {
     [Route("books")]
     [ApiController]
+    [ApiVersion("1.0")]
     public class BookController : ControllerBase
     {
         private readonly IMediator _mediator;
