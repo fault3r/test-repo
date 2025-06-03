@@ -1,3 +1,4 @@
+using BookApi_Api.Controllers.BaseControllers;
 using BookApi_Application.Commands;
 using BookApi_Application.DTOs;
 using BookApi_Application.Queries;
@@ -7,17 +8,13 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace BookApi_Api.Controllers
 {
-    [Route("books")]
     [ApiController]
+    [Route("books")]
     [ApiVersion("1.0")]
-    public class BookController : ControllerBase
+    [ApiVersion("2.0")]
+    public class BookController : BookBaseController
     {
-        private readonly IMediator _mediator;
-
-        public BookController(IMediator mediator)
-        {
-            _mediator = mediator;
-        }
+        public BookController(IMediator mediator) : base(mediator){}
 
         [HttpGet]
         public async Task<IEnumerable<BookDto>> GetBooks()
@@ -26,6 +23,7 @@ namespace BookApi_Api.Controllers
             return books;
         }
 
+        [MapToApiVersion("1.0")]
         [HttpGet("{id}")]
         public async Task<BookDto> GetBook(string id)
         {

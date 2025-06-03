@@ -1,23 +1,28 @@
+using System.Collections;
+using BookApi_Api.Controllers.BaseControllers;
 using BookApi_Application.DTOs;
+using BookApi_Application.Queries;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BookApi_Api.Controllers
 {
-    [Route("api/[controller]")]
+    //v{version:apiversion}
     [ApiController]
+    [Route("books")]
     [ApiVersion("2.0")]
-    public class BookV2Controller : BookController
+    public class BookV2Controller : BookBaseController
     {
-        public BookV2Controller(IMediator mediator) : base(mediator)
-        {
-        }
+        public BookV2Controller(IMediator mediator) : base(mediator){}
 
-        [HttpGet]
-        public new async Task<IEnumerable<BookDto>> GetBooks()
+        [MapToApiVersion("2.0")]
+        [HttpGet("{id}")]
+        public async Task<BookDto> GetBook(string id)
         {
-            return await base.GetBooks();
+            var book = await _mediator.Send(new GetBookQuery(id));
+            book.Title += " *v2*";
+            return book;
         }
     }
 }
