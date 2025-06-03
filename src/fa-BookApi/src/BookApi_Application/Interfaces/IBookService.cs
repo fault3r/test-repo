@@ -11,6 +11,6 @@ namespace BookApi_Application.Interfaces
 
         Task<BookDto> AddBook(AddBookDto book);
 
-        Task<bool> DelBook(string id);
+        Task<string> DelBook(string id);
     }
 }

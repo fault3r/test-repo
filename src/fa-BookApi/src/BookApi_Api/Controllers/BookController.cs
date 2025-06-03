@@ -3,7 +3,6 @@ using BookApi_Application.Commands;
 using BookApi_Application.DTOs;
 using BookApi_Application.Queries;
 using MediatR;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BookApi_Api.Controllers
@@ -40,7 +39,7 @@ namespace BookApi_Api.Controllers
         }
 
         [HttpDelete("{id}")]
-        public async Task<bool> DelBook(string id)
+        public async Task<string> DelBook(string id)
         {
             var result = await _mediator.Send(new DelBookCommand(id));
             return result;

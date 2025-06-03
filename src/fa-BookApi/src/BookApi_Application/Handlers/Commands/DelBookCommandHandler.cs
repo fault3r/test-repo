@@ -5,7 +5,7 @@ using MediatR;
 
 namespace BookApi_Application.Handlers.Commands
 {
-    public class DelBookCommandHandler : IRequestHandler<DelBookCommand, bool>
+    public class DelBookCommandHandler : IRequestHandler<DelBookCommand, string>
     {
         private readonly IBookService _bookService;
 
@@ -14,7 +14,7 @@ namespace BookApi_Application.Handlers.Commands
             _bookService = bookService;
         }
 
-        public async Task<bool> Handle(DelBookCommand request, CancellationToken cancellationToken)
+        public async Task<string> Handle(DelBookCommand request, CancellationToken cancellationToken)
         {
             var result = await _bookService.DelBook(request.Id);
             return result;

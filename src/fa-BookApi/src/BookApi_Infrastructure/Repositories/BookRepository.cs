@@ -57,10 +57,10 @@ namespace BookApi_Infrastructure.Repositories
             return book;
         }
 
-        public async Task<bool> DelBookAsync(string id)
+        public async Task<string> DelBookAsync(string id)
         {
-            await _mongoDbContext.Books.DeleteOneAsync(p => p.Id.ToString() == id);
-            return true;
+            var result = await _mongoDbContext.Books.DeleteOneAsync(p => p.Id.ToString() == id);
+            return result.ToJson();
         }
     }
 }

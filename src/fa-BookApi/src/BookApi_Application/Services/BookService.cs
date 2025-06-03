@@ -55,7 +55,7 @@ namespace BookApi_Application.Services
             };
         }
 
-        public async Task<bool> DelBook(string id)
+        public async Task<string> DelBook(string id)
         {
             var result = await _bookRepository.DelBookAsync(id);
             return result;

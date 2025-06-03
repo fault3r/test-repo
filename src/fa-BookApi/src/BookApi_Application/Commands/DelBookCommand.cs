@@ -3,6 +3,6 @@ using MediatR;
 
 namespace BookApi_Application.Commands
 {
-    public record DelBookCommand(string Id) : IRequest<bool>;
+    public record DelBookCommand(string Id) : IRequest<string>;
   
 }

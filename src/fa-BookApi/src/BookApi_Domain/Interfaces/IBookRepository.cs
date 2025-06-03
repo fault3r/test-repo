@@ -11,6 +11,6 @@ namespace BookApi_Domain.Interfaces
 
         Task<Book> AddBookAsync(Book book);
 
-        Task<bool> DelBookAsync(string id);
+        Task<string> DelBookAsync(string id);
     }
 }
