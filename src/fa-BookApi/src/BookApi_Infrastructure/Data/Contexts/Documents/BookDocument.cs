@@ -14,6 +14,6 @@ namespace BookApi_Infrastructure.Data.Contexts.Documents
 
         public required string Author { get; set; }
 
-        public int Year { get; set; }
+        public required int Year { get; set; }
     }
 }

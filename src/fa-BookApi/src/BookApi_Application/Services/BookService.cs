@@ -42,6 +42,7 @@ namespace BookApi_Application.Services
         {
             var dBook = await _bookRepository.AddBookAsync(new Book
             {
+                Id = "[NewId]",
                 Title = book.Title,
                 Author = book.Author,
                 Year = book.Year,

@@ -10,6 +10,6 @@ namespace BookApi_Application.DTOs
 
         public required string Author { get; set; }
 
-        public int Year { get; set; }
+        public required int Year { get; set; }
     }
 }
