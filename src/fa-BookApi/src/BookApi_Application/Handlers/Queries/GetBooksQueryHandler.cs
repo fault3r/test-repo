@@ -17,7 +17,7 @@ namespace BookApi_Application.Handlers.Queries
 
         public async Task<IEnumerable<BookDto>> Handle(GetBooksQuery request, CancellationToken cancellationToken)
         {
-            var books = await _bookService.GetBooks();
+            var books = await _bookService.GetBooks(request.p);
             return books;
         }
     }

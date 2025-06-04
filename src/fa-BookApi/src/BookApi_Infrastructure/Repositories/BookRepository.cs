@@ -18,17 +18,21 @@ namespace BookApi_Infrastructure.Repositories
             _mongoDbContext = mongoDbContext;
         }
 
-        public async Task<IEnumerable<Book>> GetBooksAsync()
+        public async Task<IEnumerable<Book>> GetBooksAsync(int page = 1, int pageSize = 3)
         {
             var filter = Builders<BookDocument>.Filter.Empty;
             var mBooks = await _mongoDbContext.Books.FindAsync(filter);
-            return mBooks.ToEnumerable().Select(r => new Book
+            var books = mBooks.ToEnumerable().Select(r => new Book
             {
                 Id = r.Id.ToString(),
                 Title = r.Title,
                 Author = r.Author,
                 Year = r.Year,
             });
+            if (page == 0)
+                return books;
+            else
+                return books.Skip((page - 1) * pageSize).Take(pageSize);
         }
 
         public async Task<Book> GetBookAsync(string id)

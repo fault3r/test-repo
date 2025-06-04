@@ -17,8 +17,16 @@ namespace BookApi_Api.Controllers
         public BookV2Controller(IMediator mediator) : base(mediator){}
 
         [MapToApiVersion("2.0")]
+        [HttpGet]
+        public async Task<IEnumerable<BookDto>> GetBooks([FromQuery]int p = 1)
+        {
+            var books = await _mediator.Send(new GetBooksQuery(p));
+            return books;
+        }
+
+        [MapToApiVersion("2.0")]
         [HttpGet("{id}")]
-        public async Task<BookDto> GetBook(string id)
+        public async Task<BookDto> GetBook([FromRoute]string id)
         {
             var book = await _mediator.Send(new GetBookQuery(id));
             book.Title += " *v2*";

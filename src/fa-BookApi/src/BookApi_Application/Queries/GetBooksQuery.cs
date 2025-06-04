@@ -4,5 +4,5 @@ using MediatR;
 
 namespace BookApi_Application.Queries
 {
-    public record GetBooksQuery : IRequest<IEnumerable<BookDto>>;
+    public record GetBooksQuery(int p = 1) : IRequest<IEnumerable<BookDto>>;
 }

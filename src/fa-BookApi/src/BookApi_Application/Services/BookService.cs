@@ -9,14 +9,15 @@ namespace BookApi_Application.Services
     public class BookService : IBookService
     {
         private readonly IBookRepository _bookRepository;
+
         public BookService(IBookRepository bookRepository)
         {
             _bookRepository = bookRepository;
         }
 
-        public async Task<IEnumerable<BookDto>> GetBooks()
+        public async Task<IEnumerable<BookDto>> GetBooks(int page=1, int pageSize=3)
         {
-            var books = await _bookRepository.GetBooksAsync();
+            var books = await _bookRepository.GetBooksAsync(page, pageSize);
             return books.Select(r => new BookDto
             {
                 Id = r.Id,

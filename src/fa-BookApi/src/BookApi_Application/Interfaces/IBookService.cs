@@ -5,7 +5,7 @@ namespace BookApi_Application.Interfaces
 {
     public interface IBookService
     {
-        Task<IEnumerable<BookDto>> GetBooks();
+        Task<IEnumerable<BookDto>> GetBooks(int page=1, int pageSize=3);
 
         Task<BookDto> GetBook(string id);
 
