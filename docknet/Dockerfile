@@ -16,8 +16,7 @@ WORKDIR /app
 COPY --from=build /app/out ./
 
 # Expose the port the app runs on
-ENV ASPNETCORE_URLS=http://+:5000
-EXPOSE 80
+EXPOSE 5000
 
 # Set the entry point for the application
 ENTRYPOINT ["dotnet", "docknet.dll"]
