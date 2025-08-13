@@ -1,0 +1,6 @@
+@docknet_HostAddress = http://localhost:5283
+
+GET {{docknet_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

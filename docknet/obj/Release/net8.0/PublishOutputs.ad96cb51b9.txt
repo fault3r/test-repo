@@ -1,0 +1,12 @@
+/home/hamed-damavandi/Documents/test-repo/docknet/publish/docknet
+/home/hamed-damavandi/Documents/test-repo/docknet/publish/appsettings.Development.json
+/home/hamed-damavandi/Documents/test-repo/docknet/publish/appsettings.json
+/home/hamed-damavandi/Documents/test-repo/docknet/publish/docknet.dll
+/home/hamed-damavandi/Documents/test-repo/docknet/publish/docknet.deps.json
+/home/hamed-damavandi/Documents/test-repo/docknet/publish/docknet.runtimeconfig.json
+/home/hamed-damavandi/Documents/test-repo/docknet/publish/docknet.pdb
+/home/hamed-damavandi/Documents/test-repo/docknet/publish/Microsoft.AspNetCore.OpenApi.dll
+/home/hamed-damavandi/Documents/test-repo/docknet/publish/Microsoft.OpenApi.dll
+/home/hamed-damavandi/Documents/test-repo/docknet/publish/Swashbuckle.AspNetCore.Swagger.dll
+/home/hamed-damavandi/Documents/test-repo/docknet/publish/Swashbuckle.AspNetCore.SwaggerGen.dll
+/home/hamed-damavandi/Documents/test-repo/docknet/publish/Swashbuckle.AspNetCore.SwaggerUI.dll
