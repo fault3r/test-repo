@@ -1,3 +1,6 @@
+
+using docknetd;
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddEndpointsApiExplorer();
@@ -14,7 +17,7 @@ app.UseHttpsRedirection();
 
 app.MapGet("/hello", () =>
 {
-    return "Hello World!";
+    return Hello.SayHi();
 });
 
 app.Run("http://0.0.0.0:5000");

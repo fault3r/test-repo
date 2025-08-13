@@ -3,8 +3,9 @@ FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /app
 
 # Copy the project files and restore dependencies
-COPY *.csproj ./
-RUN dotnet restore
+COPY ["./docknet/docknet.csproj", "./"]
+COPY . ./
+RUN dotnet restore "./docknet/docknet.csproj"
 
 # Copy the rest of the application code
 COPY . ./

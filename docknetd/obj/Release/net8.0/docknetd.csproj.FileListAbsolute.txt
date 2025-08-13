@@ -1,0 +1,12 @@
+/home/hamed-damavandi/Documents/test-repo/docknetd/bin/Release/net8.0/docknetd.deps.json
+/home/hamed-damavandi/Documents/test-repo/docknetd/bin/Release/net8.0/docknetd.dll
+/home/hamed-damavandi/Documents/test-repo/docknetd/bin/Release/net8.0/docknetd.pdb
+/home/hamed-damavandi/Documents/test-repo/docknetd/obj/Release/net8.0/docknetd.GeneratedMSBuildEditorConfig.editorconfig
+/home/hamed-damavandi/Documents/test-repo/docknetd/obj/Release/net8.0/docknetd.AssemblyInfoInputs.cache
+/home/hamed-damavandi/Documents/test-repo/docknetd/obj/Release/net8.0/docknetd.AssemblyInfo.cs
+/home/hamed-damavandi/Documents/test-repo/docknetd/obj/Release/net8.0/docknetd.csproj.CoreCompileInputs.cache
+/home/hamed-damavandi/Documents/test-repo/docknetd/obj/Release/net8.0/docknetd.sourcelink.json
+/home/hamed-damavandi/Documents/test-repo/docknetd/obj/Release/net8.0/docknetd.dll
+/home/hamed-damavandi/Documents/test-repo/docknetd/obj/Release/net8.0/refint/docknetd.dll
+/home/hamed-damavandi/Documents/test-repo/docknetd/obj/Release/net8.0/docknetd.pdb
+/home/hamed-damavandi/Documents/test-repo/docknetd/obj/Release/net8.0/ref/docknetd.dll
