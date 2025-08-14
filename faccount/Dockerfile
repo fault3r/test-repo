@@ -3,9 +3,9 @@ FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /app
 
 # Copy the project files and restore dependencies
-COPY ["./docknet/docknet.csproj", "./"]
+COPY ["./faccount.csproj", "./"]
 COPY . ./
-RUN dotnet restore "./docknet/docknet.csproj"
+RUN dotnet restore
 
 # Copy the rest of the application code
 COPY . ./
@@ -17,7 +17,7 @@ WORKDIR /app
 COPY --from=build /app/out ./
 
 # Expose the port the app runs on
-EXPOSE 5000
+EXPOSE 5001
 
 # Set the entry point for the application
-ENTRYPOINT ["dotnet", "docknet.dll"]
+ENTRYPOINT ["dotnet", "faccount.dll"]

@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  fitem:
+    build:
+      context: ./fitem
+      dockerfile: Dockerfile
+    ports:
+      - "5002:5002" 
+    networks:
+      - mynetwork
+
+  faccount:
+    build:
+      context: ./faccount
+      dockerfile: Dockerfile
+    ports:
+      - "5001:5001" 
+    networks:
+      - mynetwork
+
+networks:
+  mynetwork:
+    driver: bridge
