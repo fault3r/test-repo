@@ -4,6 +4,6 @@ namespace docknetd
 {
     public class Hello
     {
-        public static string SayHi() => "Hello Worl!";
+        public static string SayHi() => "Hello World!";
     }
 }
