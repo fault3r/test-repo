@@ -19,6 +19,18 @@ services:
     networks:
       - mynetwork
 
+  ocelot:
+    image: "ocelot/ocelot"
+    build:
+      context: ./fgateway
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    networks:
+      - mynetwork
+    volumes:
+      - ./fgateway/ocelot.json:/app/ocelot.json 
+
 networks:
   mynetwork:
     driver: bridge

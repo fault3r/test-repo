@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fitem", "fitem\fitem.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "faccount", "faccount\faccount.csproj", "{8E578EB0-C7D9-4856-8883-B48C8439DAF4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fgateway", "fgateway\fgateway.csproj", "{7F2B6A16-1757-4020-AD0A-54110B3230F5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{8E578EB0-C7D9-4856-8883-B48C8439DAF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8E578EB0-C7D9-4856-8883-B48C8439DAF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8E578EB0-C7D9-4856-8883-B48C8439DAF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F2B6A16-1757-4020-AD0A-54110B3230F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F2B6A16-1757-4020-AD0A-54110B3230F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F2B6A16-1757-4020-AD0A-54110B3230F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F2B6A16-1757-4020-AD0A-54110B3230F5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
