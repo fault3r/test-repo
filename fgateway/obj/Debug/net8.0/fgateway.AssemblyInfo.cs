@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("fgateway")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5e1f472416e98be821b3e46d968f4bbee5df0903")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f71e72a122c088b77f679c1d434533ca65cd891f")]
 [assembly: System.Reflection.AssemblyProductAttribute("fgateway")]
 [assembly: System.Reflection.AssemblyTitleAttribute("fgateway")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

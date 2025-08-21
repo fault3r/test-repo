@@ -1,7 +1,11 @@
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
-builder.Services.AddEndpointsApiExplorer();
+
+builder.Services.AddHttpClient("ItemHttpClient", client =>
+{
+    client.BaseAddress = new Uri("http://localhost:5005/api/v1/items/");
+});
 
 var app = builder.Build();
 
