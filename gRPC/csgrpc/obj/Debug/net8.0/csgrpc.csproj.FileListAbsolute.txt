@@ -36,3 +36,5 @@
 /home/hamed-damavandi/Documents/test-repo/gRPC/csgrpc/obj/Debug/net8.0/csgrpc.pdb
 /home/hamed-damavandi/Documents/test-repo/gRPC/csgrpc/obj/Debug/net8.0/csgrpc.genruntimeconfig.cache
 /home/hamed-damavandi/Documents/test-repo/gRPC/csgrpc/obj/Debug/net8.0/ref/csgrpc.dll
+/home/hamed-damavandi/Documents/test-repo/gRPC/csgrpc/bin/Debug/net8.0/Grpc.AspNetCore.Server.Reflection.dll
+/home/hamed-damavandi/Documents/test-repo/gRPC/csgrpc/bin/Debug/net8.0/Grpc.Reflection.dll

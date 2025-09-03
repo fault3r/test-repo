@@ -8,7 +8,7 @@ namespace csgrpc.Services
     {
         public override Task<HiReply> SayHi(HiRequest request, ServerCallContext context)
         {
-            return Task.FromResult(new HiReply { Message = "Hello World!" });
+            return Task.FromResult(new HiReply { Message = $"Hello {request.Name}!" });
         }        
     }
 }
