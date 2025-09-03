@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nXUkWlWeGWc=",
+  "dgSpecHash": "9xhEQYmr8gI=",
   "success": true,
-  "projectFilePath": "/home/hamed-damavandi/Documents/test-repo-1/faccount/faccount.csproj",
+  "projectFilePath": "/home/hamed-damavandi/Documents/test-repo/faccount/faccount.csproj",
   "expectedPackageFiles": [
     "/home/hamed-damavandi/.nuget/packages/microsoft.netcore.app.host.linux-x64/8.0.18/microsoft.netcore.app.host.linux-x64.8.0.18.nupkg.sha512"
   ],

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/hamed-damavandi/Documents/test-repo-1/faccount/faccount.csproj": {}
+    "/home/hamed-damavandi/Documents/test-repo/faccount/faccount.csproj": {}
   },
   "projects": {
-    "/home/hamed-damavandi/Documents/test-repo-1/faccount/faccount.csproj": {
+    "/home/hamed-damavandi/Documents/test-repo/faccount/faccount.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/hamed-damavandi/Documents/test-repo-1/faccount/faccount.csproj",
+        "projectUniqueName": "/home/hamed-damavandi/Documents/test-repo/faccount/faccount.csproj",
         "projectName": "faccount",
-        "projectPath": "/home/hamed-damavandi/Documents/test-repo-1/faccount/faccount.csproj",
+        "projectPath": "/home/hamed-damavandi/Documents/test-repo/faccount/faccount.csproj",
         "packagesPath": "/home/hamed-damavandi/.nuget/packages/",
-        "outputPath": "/home/hamed-damavandi/Documents/test-repo-1/faccount/obj/",
+        "outputPath": "/home/hamed-damavandi/Documents/test-repo/faccount/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/hamed-damavandi/.nuget/NuGet/NuGet.Config"

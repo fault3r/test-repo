@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option csharp_namespace = "csgrpc.Protos";
+
+package helloworld;
+
+service HelloworldService {
+  rpc SayHi (HiRequest) returns (HiReply);
+}
+
+message HiRequest {
+  string name = 1;
+}
+
+message HiReply {
+  string message = 1;
+}
