@@ -1,0 +1,20 @@
+﻿syntax = "proto3";
+
+option csharp_namespace = "CalculatorGrpc";
+
+package calculator;
+
+service CalculatorService {
+  rpc Sum (CalcRequest) returns (CalcReply);
+
+  rpc Mines (CalcRequest) returns (CalcReply);
+}
+
+message CalcRequest {
+  int32 x = 1;
+  int32 y = 2;
+}
+
+message CalcReply {
+  int32 res = 1;
+}

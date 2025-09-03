@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/hamed-damavandi/Documents/test-repo-1/faccount/faccount.csproj": {}
+    "/home/hamed-damavandi/Documents/test-repo-1/gRPC/grpc-proj/grpc-proj.csproj": {}
   },
   "projects": {
-    "/home/hamed-damavandi/Documents/test-repo-1/faccount/faccount.csproj": {
+    "/home/hamed-damavandi/Documents/test-repo-1/gRPC/grpc-proj/grpc-proj.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/hamed-damavandi/Documents/test-repo-1/faccount/faccount.csproj",
-        "projectName": "faccount",
-        "projectPath": "/home/hamed-damavandi/Documents/test-repo-1/faccount/faccount.csproj",
+        "projectUniqueName": "/home/hamed-damavandi/Documents/test-repo-1/gRPC/grpc-proj/grpc-proj.csproj",
+        "projectName": "grpc-proj",
+        "projectPath": "/home/hamed-damavandi/Documents/test-repo-1/gRPC/grpc-proj/grpc-proj.csproj",
         "packagesPath": "/home/hamed-damavandi/.nuget/packages/",
-        "outputPath": "/home/hamed-damavandi/Documents/test-repo-1/faccount/obj/",
+        "outputPath": "/home/hamed-damavandi/Documents/test-repo-1/gRPC/grpc-proj/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/hamed-damavandi/.nuget/NuGet/NuGet.Config"
@@ -45,6 +45,20 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Grpc.AspNetCore": {
+              "target": "Package",
+              "version": "[2.71.0, )"
+            },
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[8.0.18, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.6.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
