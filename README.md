@@ -1,2 +1,2 @@
 # Test Repository 
-- to testing purposes.
+this is a repository for implements and testing purposes..
