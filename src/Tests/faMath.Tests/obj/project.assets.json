@@ -1712,6 +1712,16 @@
         "build": {
           "build/netcoreapp3.1/xunit.runner.visualstudio.props": {}
         }
+      },
+      "faMath/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/faMath.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/faMath.dll": {}
+        }
       }
     }
   },
@@ -5507,12 +5517,18 @@
         "xunit.runner.visualstudio.2.4.5.nupkg.sha512",
         "xunit.runner.visualstudio.nuspec"
       ]
+    },
+    "faMath/1.0.0": {
+      "type": "project",
+      "path": "../faMath/faMath.csproj",
+      "msbuildProject": "../faMath/faMath.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
       "Microsoft.NET.Test.Sdk >= 17.6.0",
       "coverlet.collector >= 6.0.0",
+      "faMath >= 1.0.0",
       "xunit >= 2.4.2",
       "xunit.runner.visualstudio >= 2.4.5"
     ]
@@ -5523,11 +5539,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/hamed-damavandi/Documents/test-repo/src/Tests/fa.tests/fa.tests.csproj",
-      "projectName": "fa.tests",
-      "projectPath": "/home/hamed-damavandi/Documents/test-repo/src/Tests/fa.tests/fa.tests.csproj",
+      "projectUniqueName": "/home/hamed-damavandi/Documents/test-repo/src/Tests/faMath.Tests/faMath.Tests.csproj",
+      "projectName": "faMath.Tests",
+      "projectPath": "/home/hamed-damavandi/Documents/test-repo/src/Tests/faMath.Tests/faMath.Tests.csproj",
       "packagesPath": "/home/hamed-damavandi/.nuget/packages/",
-      "outputPath": "/home/hamed-damavandi/Documents/test-repo/src/Tests/fa.tests/obj/",
+      "outputPath": "/home/hamed-damavandi/Documents/test-repo/src/Tests/faMath.Tests/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/hamed-damavandi/.nuget/NuGet/NuGet.Config"
@@ -5543,7 +5559,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/home/hamed-damavandi/Documents/test-repo/src/Tests/faMath/faMath.csproj": {
+              "projectPath": "/home/hamed-damavandi/Documents/test-repo/src/Tests/faMath/faMath.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
