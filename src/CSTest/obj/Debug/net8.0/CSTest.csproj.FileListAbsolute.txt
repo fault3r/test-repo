@@ -1,0 +1,15 @@
+/home/hamed-damavandi/Documents/test-repo/src/CSTest/bin/Debug/net8.0/CSTest
+/home/hamed-damavandi/Documents/test-repo/src/CSTest/bin/Debug/net8.0/CSTest.deps.json
+/home/hamed-damavandi/Documents/test-repo/src/CSTest/bin/Debug/net8.0/CSTest.runtimeconfig.json
+/home/hamed-damavandi/Documents/test-repo/src/CSTest/bin/Debug/net8.0/CSTest.dll
+/home/hamed-damavandi/Documents/test-repo/src/CSTest/bin/Debug/net8.0/CSTest.pdb
+/home/hamed-damavandi/Documents/test-repo/src/CSTest/obj/Debug/net8.0/CSTest.GeneratedMSBuildEditorConfig.editorconfig
+/home/hamed-damavandi/Documents/test-repo/src/CSTest/obj/Debug/net8.0/CSTest.AssemblyInfoInputs.cache
+/home/hamed-damavandi/Documents/test-repo/src/CSTest/obj/Debug/net8.0/CSTest.AssemblyInfo.cs
+/home/hamed-damavandi/Documents/test-repo/src/CSTest/obj/Debug/net8.0/CSTest.csproj.CoreCompileInputs.cache
+/home/hamed-damavandi/Documents/test-repo/src/CSTest/obj/Debug/net8.0/CSTest.sourcelink.json
+/home/hamed-damavandi/Documents/test-repo/src/CSTest/obj/Debug/net8.0/CSTest.dll
+/home/hamed-damavandi/Documents/test-repo/src/CSTest/obj/Debug/net8.0/refint/CSTest.dll
+/home/hamed-damavandi/Documents/test-repo/src/CSTest/obj/Debug/net8.0/CSTest.pdb
+/home/hamed-damavandi/Documents/test-repo/src/CSTest/obj/Debug/net8.0/CSTest.genruntimeconfig.cache
+/home/hamed-damavandi/Documents/test-repo/src/CSTest/obj/Debug/net8.0/ref/CSTest.dll

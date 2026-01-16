@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/hamed-damavandi/Documents/test-repo/src/Tests/faMath/faMath.csproj",
-      "projectName": "faMath",
-      "projectPath": "/home/hamed-damavandi/Documents/test-repo/src/Tests/faMath/faMath.csproj",
+      "projectUniqueName": "/home/hamed-damavandi/Documents/test-repo/src/CSTest/CSTest.csproj",
+      "projectName": "CSTest",
+      "projectPath": "/home/hamed-damavandi/Documents/test-repo/src/CSTest/CSTest.csproj",
       "packagesPath": "/home/hamed-damavandi/.nuget/packages/",
-      "outputPath": "/home/hamed-damavandi/Documents/test-repo/src/Tests/faMath/obj/",
+      "outputPath": "/home/hamed-damavandi/Documents/test-repo/src/CSTest/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/hamed-damavandi/.nuget/NuGet/NuGet.Config"
