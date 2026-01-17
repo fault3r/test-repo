@@ -1,0 +1,66 @@
+# outputs
+**/bin/
+**/obj/
+**/TestResults/
+**/publish/
+**/out/
+**/dist/
+
+# solution-level cache
+**/*.sln.cache
+**/*.csproj.user
+
+# user-specific and IDE files
+**/*.user
+**/*.suo
+**/*.userosscache
+**/*.sln.docstates
+.vs/
+.vscode/
+.idea/
+
+# NuGet packages and cache
+**/*.nupkg
+**/*.snupkg
+packages/
+.nuget/
+**/packages/
+
+# Docker-related files
+Dockerfile.*
+docker-compose.override.yml
+**/*.tar
+**/*.gz
+**/*.img
+**/*.container
+
+# logs and temp files
+# **/*.log
+**/*.tmp
+**/*.bak
+**/*.old
+**/*.orig
+
+# OS-specific files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+**/*.swp
+
+# test coverage and diagnostics
+**/*.trx
+**/*.coverage
+**/*.coveragexml
+
+# build artifacts and lock files
+**/*.dll
+**/*.exe
+**/*.app
+**/*.pdb
+**/*.cache
+**/*.db
+**/*.db-shm
+**/*.db-wal
+**/*.pid
+**/*.lock.json
