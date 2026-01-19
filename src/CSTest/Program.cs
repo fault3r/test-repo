@@ -8,11 +8,11 @@ internal class Program
 {
     public static async Task Main(string[] args)
     {
-        Console.WriteLine("App started...\n");
+        Console.WriteLine("App started...");
 
-        var task = Loading();
-        Console.WriteLine("\nresumming...\n");
-
+        var task = Task.Run(() => Loading());
+        
+        Console.Write("\nwaiting..");
         Thread.Sleep(5000);
         stop = true;
 
@@ -25,9 +25,9 @@ internal class Program
 
     public static async Task Loading()
     {
-        string text = "Damaavandi";
+        string text = "\\|/|";
 
-        int left = Console.CursorLeft + 20;
+        int left = Console.CursorLeft + 26                                          ;
         int top = Console.CursorTop;
 
         for (int i = 0; i < text.Length; i++)
@@ -36,7 +36,7 @@ internal class Program
             Console.Write(text[i..(i + 1)]);
             Thread.Sleep(300);
 
-            if (i == text.Length - 1) i = 0;
+            if (i == text.Length - 1) i = -1;
             if (stop) break;
         }
     }
