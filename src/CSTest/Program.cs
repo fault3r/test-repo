@@ -10,7 +10,7 @@ internal class Program
     {
         Console.WriteLine("App started...\n");
 
-        var task = Task.Run(() => Loading());
+        var task = Loading();
         Console.WriteLine("\nresumming...\n");
 
         Thread.Sleep(5000);
@@ -23,7 +23,7 @@ internal class Program
 
     public static bool stop = false;
 
-    public static Task Loading()
+    public static async Task Loading()
     {
         string text = "Damaavandi";
 
@@ -36,9 +36,8 @@ internal class Program
             Console.Write(text[i..(i + 1)]);
             Thread.Sleep(300);
 
-            if (i == text.Length-1) i = 0;
+            if (i == text.Length - 1) i = 0;
             if (stop) break;
         }
-        return Task.CompletedTask;
     }
 }
