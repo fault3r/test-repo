@@ -1,6 +1,5 @@
 ﻿
 using System;
-using System.Threading.Tasks;
 
 namespace CSTest;
 
@@ -8,36 +7,36 @@ internal class Program
 {
     public static async Task Main(string[] args)
     {
-        Console.WriteLine("App started...");
+        Console.WriteLine("running...");
 
-        Task task = Loading();
-        
-        Console.Write("\nwaiting..");
-        Thread.Sleep(5000);
-        stop = true;
+        var cts = new CancellationTokenSource();
+        var ct = cts.Token;
 
-        await task;
+        var result = Download(ct);
 
-        Console.WriteLine("\nEverything is ended.");
+        Thread.Sleep(3000);
+
+        cts.Cancel();
+
+        var res = await result;
+        Console.WriteLine($"downloaded: {res}");
+
+        Console.WriteLine("everything is ended.");
     }
 
-    public static bool stop = false;
-
-    public static async Task Loading()
+    public static async Task<string> Download(CancellationToken cancellationToken)
     {
-        string text = "\\|/|";
-
-        int left = Console.CursorLeft + 26;
-        int top = Console.CursorTop;
-
-        for (int i = 0; i < text.Length; i++)
+        try
         {
-            Console.SetCursorPosition(left, top);
-            Console.Write(text[i..(i + 1)]);
-            await Task.Delay(300);
-
-            if (i == text.Length - 1) i = -1;
-            if (stop) break;
+            Console.WriteLine("downloading data...");
+            await Task.Delay(TimeSpan.FromSeconds(10), cancellationToken);
+            Console.WriteLine("data downloaded successfully.");
+            return "data";
+        }
+        catch (TaskCanceledException)
+        {
+            Console.WriteLine("download operation was canceled!");
+            return "canceled";
         }
     }
 }
