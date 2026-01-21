@@ -6,11 +6,11 @@ namespace CSTest;
 
 internal class Program
 {
-    public static async Task Main(string[] args)
+    public async Task Main(string[] args)
     {
         Console.WriteLine("App started...");
 
-        var task = Task.Run(() => Loading());
+        Task task = Task.Run(() => Loading());
         
         Console.Write("\nwaiting..");
         Thread.Sleep(5000);
@@ -21,13 +21,13 @@ internal class Program
         Console.WriteLine("\nEverything is ended.");
     }
 
-    public static bool stop = false;
+    public  bool stop = false;
 
-    public static async Task Loading()
+    public  async Task Loading()
     {
         string text = "\\|/|";
 
-        int left = Console.CursorLeft + 26                                          ;
+        int left = Console.CursorLeft + 26;
         int top = Console.CursorTop;
 
         for (int i = 0; i < text.Length; i++)
