@@ -9,7 +9,9 @@ namespace JIT
     {
         public static async Task Main(string[] args)
         {
-             
+             var writer = new ConsoleWriter();
+             writer.WriteAsync("Aaaa");
+
         }
     }
 
@@ -18,14 +20,23 @@ namespace JIT
         private const string Characters = "abcdefghijklmnopqrstuvwxyz";
         private Random Randomizer = new();
 
-        private char[] GetCharacters()
+        private char[] GetDummy(int lenght = 5)
         {
-            
+            char[] chars = new char[lenght];
+
+            for(int i=0;i<lenght;i++)
+            {
+                var random = Randomizer.Next(0,26);
+                chars[i]=Characters[random];
+            }
+
+            return chars;
         }
 
         public async Task WriteAsync(string text)
         {
-
+            var res = GetDummy();
+            Console.WriteLine(res);
         }
     }
 }
