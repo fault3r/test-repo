@@ -9,7 +9,6 @@ class Program
         Console.WriteLine("App started");
 
         var cts = new CancellationTokenSource();
-
         await Task.Delay(5000, cts.Token);
 
         Console.WriteLine("Everything is ended.");
