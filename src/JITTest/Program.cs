@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 
 namespace JITTest;
 
@@ -8,6 +9,34 @@ class Program
     {
         Console.WriteLine("App started..");
 
-        Console.WriteLine("Stopped!");
+        var cts = new CancellationTokenSource(
+            TimeSpan.FromSeconds(5));
+
+        var downloader = new Downloader();
+
+        var result = await downloader.Download("url", cts.Token);
+
+        Console.WriteLine($"Data: {result}");
+
+        Console.WriteLine("Everyhting is ended.");
+    }
+}
+
+public class Downloader
+{
+    public async Task<string> Download(string url, CancellationToken cancellationToken = default)
+    {
+        Console.WriteLine("Status: start downloading..");
+
+        try
+        {
+            await Task.Delay(2000, cancellationToken);      
+        }
+        catch(Exception e)
+        {
+            Console.WriteLine($"Status: download failed! {e.Message}");
+        }
+
+        return "Downloaded Data.";    
     }
 }
